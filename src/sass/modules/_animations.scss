@@ -1,0 +1,22 @@
+
+//icon control hover
+@keyframes rotateIcon{
+    0%{
+        transform: rotateZ(0) scale(1);
+    }
+    25%{
+        transform: rotateZ(12deg) scale(1.1);
+    }
+    50%{
+        transform: rotateZ(0) scale(0.9);
+    }
+    75%{
+        transform: rotateZ(-12deg) scale(1.1);
+    }
+    100%{
+        transform: rotateZ(0) scale(1);
+    }
+}
+
+
+

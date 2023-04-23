@@ -1,0 +1,74 @@
+{
+    "songsInfo": [
+        {
+            "id": 0,
+            "name": "Yummy",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/ym.mp3"
+        },
+        {
+            "id": 1,
+            "name": "Figure you out",
+            "singer": "Thuy",
+            "image": "./public/images/t.jpg",
+            "path": "./public/sounds/fuo.mp3"
+        },
+        {
+            "id": 2,
+            "name": "Intention",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/itt.mp3"
+        },
+        {
+            "id": 3,
+            "name": "Sombody",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/sb.mp3"
+        },
+        {
+            "id": 4,
+            "name": "Position",
+            "singer": "Ariana Grande",
+            "image": "./public/images/agd.png",
+            "path": "./public/sounds/pst.mp3"
+        },
+        {
+            "id": 5,
+            "name": "Hold on",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/ho.mp3"
+        },
+        {
+            "id": 6,
+            "name": "Peaches",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/pc.mp3"
+        },
+        {
+            "id": 7,
+            "name": "Chances",
+            "singer": "Thuy",
+            "image": "./public/images/t.jpg",
+            "path": "./public/sounds/cc.mp3"
+        },
+        {
+            "id": 8,
+            "name": "Let me love u",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/lmly.mp3"
+        },
+        {
+            "id": 9,
+            "name": "Ghost",
+            "singer": "Justin Bieber",
+            "image": "./public/images/jbb.png",
+            "path": "./public/sounds/gh.mp3"
+        }
+    ]
+}

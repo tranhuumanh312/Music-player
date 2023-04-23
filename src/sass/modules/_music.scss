@@ -1,0 +1,205 @@
+.body .body-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .music{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 318px;
+        max-width: 390px;
+        height: 91%;
+        border-radius: 6px;
+        border: 3px solid $gray-color;
+        box-sizing: border-box;
+        &-control{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 0 18px;
+            box-sizing: border-box;
+            .control-header{
+                display: flex;
+                width: 100%;
+                height: 51px;
+                padding: 3px 18px;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 3px;
+                box-shadow: 0 0 1px 2px $gray-color;
+                i{
+                    font-size: 36px;
+                }
+                h3{
+                    font-size: 27px;
+                }
+
+            }
+            .control-body{
+                position: relative;
+                width: 232px;
+                height: 232px;
+                &:hover .timing-audio{
+                    opacity: 1;
+                }
+                img{
+                    margin: 6px 0 0 3px;
+                    height: 96%;
+                    width: 96%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    transition: 0.3s linear;
+                }
+                .timing-audio{
+                    position: absolute;
+                    background-color: $black-color;
+                    padding: 1px 3px;
+                    border-radius: 6px;
+                    top: 50%;
+                    left: 50%;
+                    opacity: 0;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s;
+                }
+                .scroll-left{
+                    border-radius:50% 0 0 50%;
+                }
+                .scroll-left,
+                .scroll-right{
+                    position: absolute;
+                    top: 0;
+                    width: 48%;
+                    height: 100%;
+                    // border: 1px solid green;
+                    overflow-y: scroll;
+                    .scroll{
+                        width: 100%;
+                        height: 200%;
+                        
+                        
+                    }
+                }
+                .scroll-right{
+                    border-radius: 0  50% 50% 0;
+                    left: 50%;
+                }
+            }
+            .control-footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                border-radius: 6px;
+                box-shadow: 0 0 1px 2px $gray-color;
+                .events{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 63px;
+                    justify-content: space-around;
+                    i{
+                        font-size: 39px;
+                        transition: 0.6s;
+                    }
+                    .hover:hover{
+                        animation: rotateIcon 0.3s linear;
+                    }
+                    .disable{
+                        opacity: 0.3;
+
+                    }
+                   .plause{
+                        position: relative;
+                        width: 62px;
+                        height: 100%;
+                        // width: ;
+                        // font-size: 60px;
+                        i:nth-child(1){
+                            position: absolute;
+                            font-size: 57px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            transition: 0.3s;
+                        }
+                        i:nth-child(2){
+                            position: absolute;
+                            font-size: 57px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            transition: 0.3s;
+                        }
+                        .hidden{
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &-playlist{
+            flex: 1;
+            width: 91%;
+            margin: 9px 0 0;
+            border-radius: 6px;
+            border: 2px solid $gray-color;
+            overflow-y: scroll;
+            .list{
+                width: calc(100% - 2px);
+                height: 900px;
+                padding: 0 3px;
+                box-sizing: border-box;
+                .song{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 51px;
+                    margin: 6px 0;
+                    padding: 5px 3px;
+                    border-radius: 6px;
+                    border: 1px solid $gray-color;
+                    transition: 0.3s;
+                    box-sizing: border-box;
+                    img{
+                        height: 51px;
+                        width: 51px;
+                        border-radius: 12px;
+                    }
+                    h3{
+                        font-size: 21px;
+                        text-align: center;
+                        flex: 1;
+                    }
+                }
+                .song:hover{
+                    background-color: $gray-color;
+                }   
+            }
+        }
+    }
+} 
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

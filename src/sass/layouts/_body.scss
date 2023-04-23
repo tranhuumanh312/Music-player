@@ -1,0 +1,162 @@
+#root .body{
+    display: flex;
+    width: 100%;
+    height:calc(100vh - var(--height-header));
+    padding: 0 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    &-sidebar__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 0;
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        border-radius: 9px;
+        border: 2px solid $gray-color;
+        box-sizing: border-box;
+        transition: 0.3s;
+        pointer-events: none;
+        .first-options,
+        .second-options{
+            position: relative;
+            width: 51px;
+            .btn{
+                position: relative;                    
+                width: 100%;
+                height: 51px;
+                margin-bottom: 12px;
+                opacity: 0.3;
+                border: 1px solid gray;
+                border-radius: 6px;
+                transition: 0.3s;
+                i{
+                    font-size: 51px;
+                }
+                span{
+                    position: absolute;
+                    display: inline-block;
+                    text-align: center;
+                    left: 131%;
+                    top: 50%;
+                    min-width: 72px;
+                    padding:0 6px 3px;
+                    opacity: 0;
+                    transform: translateY(-50%);
+                    border-radius: 6px;
+                    border: 1px solid $white-color;
+                    pointer-events: none;
+                    transition: 0.3s;
+                }
+            }
+            .btn:hover{
+                opacity: 1;
+            }
+            .btn:hover span{
+                opacity: 1;
+            }
+        }
+    }
+    &-content{
+        flex: 1;
+        // border: 1px solid gray;
+        box-sizing: border-box;
+    }
+
+    &-sidebar__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        padding: 9px 0;
+        width: 0;
+        height: 100%;
+        text-align: center;
+        border-radius: 9px;
+        border: 2px solid $gray-color;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        .account,
+        .manage{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            width: 100%;
+
+            .btn{
+                position: relative;
+                width: 51px;
+                height: 51px;
+                margin: 6px 0;
+                border-radius: 9px;
+                color: $white-color;
+                opacity: 0.3;
+                border: 1px solid $white-color;
+                transition: 0.6s;
+                i{  
+                    font-size: 51px;
+                }
+                span{
+                    position: absolute;
+                    width: 63px;
+                    padding: 0 0 3px;
+                    border: 1px solid $white-color;
+                    border-radius: 9px;
+                    top: 50%;
+                    right: 121%;
+                    opacity: 0;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                    transition: 0.6s;
+                }
+            }
+            .btn:hover{
+                opacity: 1;
+            }
+            .btn:hover span{
+                opacity: 1;
+            }
+        }        
+        .manage{
+            .mode-view{
+                position: relative;
+                display: inline-block;
+                height: 27px;
+                width: 81%;
+                margin-top: 3px;
+                border: 2px solid $white-color;
+                border-radius: 14px;
+                .btn-mode{
+                    position: absolute;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                    border: 2px solid $whiteLow-color;
+                    box-sizing: border-box;
+                    transition: 0.6s;
+                    i:first-child{
+                        position: absolute;
+                        font-size: 24px;
+                        left: 0;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        transition: 0.6s;
+                    }
+                    i:last-child{
+                        position: absolute;
+                        left: 0;
+                        opacity: 0;
+                        font-size: 24px;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        transition: 0.6s;
+                    }
+                }
+            }
+        }
+    }
+}
