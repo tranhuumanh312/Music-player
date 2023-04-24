@@ -25,7 +25,7 @@ root.appendChild(body())
     
 
     //music
-    let api = 'http://localhost:3000/songsInfo'
+    let api = 'https://testapi.io/api/tranthiai312/songsInfo'
 
     let bodyContent = $('.body-content')
     bodyContent.appendChild(music(api))
